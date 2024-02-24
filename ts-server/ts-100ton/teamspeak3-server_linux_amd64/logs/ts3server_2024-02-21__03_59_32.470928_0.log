@@ -1,0 +1,20 @@
+2024-02-21 03:59:32.471002|INFO    |ServerLibPriv |   |TeamSpeak 3 Server 3.13.7 (2022-06-20 12:21:53)
+2024-02-21 03:59:32.471118|INFO    |ServerLibPriv |   |SystemInformation: Linux 5.15.0-91-generic #101-Ubuntu SMP Tue Nov 14 13:30:08 UTC 2023 x86_64 Binary: 64bit
+2024-02-21 03:59:32.471136|INFO    |ServerLibPriv |   |Using hardware aes
+2024-02-21 03:59:32.471835|INFO    |DatabaseQuery |   |dbPlugin name:    SQLite3 plugin, Version 3, (c)TeamSpeak Systems GmbH
+2024-02-21 03:59:32.472208|INFO    |DatabaseQuery |   |dbPlugin version: 3.11.1
+2024-02-21 03:59:32.472539|INFO    |DatabaseQuery |   |checking database integrity (may take a while)
+2024-02-21 03:59:32.496753|WARNING |Accounting    |   |Unable to open licensekey.dat, falling back to limited functionality
+2024-02-21 03:59:32.496887|INFO    |Accounting    |   |Licensing Information
+2024-02-21 03:59:32.496903|INFO    |Accounting    |   |licensed to       : Anonymous
+2024-02-21 03:59:32.496910|INFO    |Accounting    |   |type              : No License
+2024-02-21 03:59:32.496920|INFO    |Accounting    |   |starting date     : Tue Feb  1 00:00:00 2022
+2024-02-21 03:59:32.496927|INFO    |Accounting    |   |ending date       : Thu Jul  1 00:00:00 2027
+2024-02-21 03:59:32.496932|INFO    |Accounting    |   |max virtualservers: 1
+2024-02-21 03:59:32.496937|INFO    |Accounting    |   |max slots         : 32
+2024-02-21 03:59:32.997070|ERROR   |Accounting    |   |local accounting reports an already running instance, instance will shutdown
+2024-02-21 03:59:33.245980|INFO    |              |   |Puzzle precompute time: 729
+2024-02-21 03:59:33.246725|ERROR   |FileManager   |   |bind failed on 0.0.0.0:30033; reason: Address already in use
+2024-02-21 03:59:33.246791|ERROR   |FileManager   |   |bind failed on [::]:30033; reason: Address already in use
+2024-02-21 03:59:33.246806|ERROR   |FileManager   |   |Could not bind filetransfer listen port on default addresses
+2024-02-21 03:59:33.246815|CRITICAL|VirtualSvrMgr |   |Could not start file manager 258 no network port available

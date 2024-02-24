@@ -1,0 +1,47 @@
+=====TEAM SPEAK CREATE=====
+
+1° sudo apt update && apt upgrade
+2° sudo adduser --disabled-login (nome de usuario)
+3° sudo su (nome de usuario)
+4° cd /home/teamspeak		
+5° wget https://files.teamspeak-services.com/releases/server/3.13.7/teamspeak3-server_linux_amd64-3.13.7.tar.bz2
+6° tar -xvf teamspeak3-server_linux_amd64-3.13.7.tar.bz2
+7° rm teamspeak3-server_linux_amd64-3.13.7.tar.bz2
+8° cd teamspeak3-server_linux_amd64
+9° ./ts3server_startscript.sh start
+10° touch /teamspeak3-server_linux_amd64/.ts3server_license_accepted
+11° su -
+12° sudo nano /lib/systemd/system/teamspeak.service
+13°
+[Unit]
+Description=TeamSpeak 3 Server
+After=network.target
+[Service]
+WorkingDirectory=/home/teamspeak/teamspeak3-server_linux_amd64
+User=teamspeak
+Group=teamspeak
+Type=forking
+ExecStart=/home/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh start inifile=ts3server.ini
+ExecStop=/home/teamspeak/teamspeak3-server_linux_amd64/ts3server_startscript.sh stop
+PIDFile=/home/teamspeak/teamspeak3-server_linux_amd64/ts3server.pid
+RestartSec=15
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+14° systemctl --system daemon-reload
+15° systemctl enable teamspeak.service 
+16° systemctl start teamspeak.service
+17° systemctl | grep teamspeak.service
+18° systemctl status teamspeak.service
+19° cat logs/ts3server_*
+
+===========================
+
+====PERMISSÕES FIREWALL====
+ 
+sudo ufw allow 9987/udp
+sudo ufw allow 10011/tcp
+sudo ufw allow 3033/tcp
+ 
+===========================

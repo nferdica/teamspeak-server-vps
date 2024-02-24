@@ -1,0 +1,4 @@
+2024-02-23 14:22:28.593290|INFO    |VirtualServerBase|1  |listening on 0.0.0.0:9987, [::]:9987
+2024-02-23 19:55:42.375570|INFO    |VirtualServer |1  |permission 'i_icon_id'(id:145) with values (value:1680151744) was added by 'nferdica'(id:3) to channel 'Treinamento'(id:68)
+2024-02-24 02:23:08.883828|INFO    |VirtualServer |1  |client 'jhow.'(id:4) was added to servergroup 'Verificado'(id:7) by client 'nferdica'(id:3)
+2024-02-24 02:33:59.601786|INFO    |VirtualServer |1  |client 'Grosso'(id:11) was added to servergroup 'Verificado'(id:7) by client 'nferdica'(id:3)
