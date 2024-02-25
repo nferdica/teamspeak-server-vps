@@ -1,3 +1,0 @@
-2024-02-21 03:44:20.026508|INFO    |VirtualServerBase|1  |listening on 0.0.0.0:9987, [::]:9987
-2024-02-21 03:50:40.219309|INFO    |VirtualServer |1  |client 'nferdica'(id:3) was added to servergroup 'Server Admin'(id:6) by client 'server'(id:0)
-2024-02-21 03:50:40.220018|INFO    |VirtualServer |1  |client 'nferdica'(id:3) used privilege key '3zoLEwAfCT6Oda6HITIZuSnUeFQhPkRLF8d9gakV' and was added to servergroup 'Server Admin'(id:6)
