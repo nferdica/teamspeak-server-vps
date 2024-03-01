@@ -13,6 +13,7 @@
 11° su -
 12° sudo nano /lib/systemd/system/teamspeak.service
 13°
+
 [Unit]
 Description=TeamSpeak 3 Server
 After=network.target
